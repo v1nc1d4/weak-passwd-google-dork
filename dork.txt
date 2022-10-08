@@ -414,7 +414,6 @@ index.of passlist
 intitle:"Index of" ".htpasswd" "htgroup" -intitle:"dist" -apache -htpasswd.c
 intitle:"Index of" spwd.db passwd -pam.conf
 intitle:"Index of" ".htpasswd" htpasswd.bak
-intitle:"Index of..etc" passwd
 intitle:index.of passwd passwd.bak
 intitle:index.of mt-db-pass.cgi
 "DefaultPassword" ext:reg "[HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindows NTCurrentVersionWinlogon]"
@@ -449,7 +448,6 @@ filetype: ldb admin
 inurl: search / admin.php
 inurl: password.log filetype:log
 filetype: reg HKEY_CURRENT_USER username
-filetype:env "DB_PASSWORD"
 "index of /"" +passwd
 "intitle: ""Index of ftp passwords"
 "Inurl: ""login"" Intitle:index of username and pass
@@ -785,28 +783,23 @@ site:target.com inurl:_vti_bin/sites.asmx?wsdl | intitle:_vtl_bin/sites.asmx?wsd
 site:target.com filetype:php
 site:target.com filetype:aspx
 site:target.com filetype:swf
-site:target.com filetype:wsdl
-site:target.com intext:"index of /"
-site: "target.com" "php"
-Intitle:index.of api
-site: "target.com" ext:php
-site:target.com "php"
-site:target.com ext:php
-target.com filetype:WSDL
-site:target.com filetype:wsdl
-site:target.com ext:svc inurl:wsdl
-site:target.com filetype:wdsl wdsl
-site:target.com filetype:?wsdl
-site:target.com inurl:asmx?wsdl
-site:target.com inurl:jws?wsdl
-site:target.com inurl:_vti_bin/sites.asmx?wsdl | intitle:_vtl_bin/sites.asmx?wsdl
-site:target.com filetype:php
-site:target.com filetype:aspx
-site:target.com filetype:swf
-site:target.com filetype:wsdl
 site:target.com intext:"index of /"
 site:target.com filetype:txt
 site:target.com filetype:php.txt
 site:target.com ext:txt
 "site:target.com inurl:%2F" 
 "site:target.com inurl:%3a"
+intitle:"Index of" htpasswd	
+site:rentry.co intext:"password"	
+site:pastebin.com "admin password"
+site:controlc.com intext:"password"	
+site:pastebin.com "password"
+site:pastebin.com intext:pass.txt	
+intext:"Index of" intext:"password.zip"
+intext:"index of" "uploads"	
+intext:"password" | "passwd" | "pwd" site:ghostbin.com
+site:pastebin.com intext:password.txt	
+intext:"/pfx-password.txt" "[To Parent Directory]"
+site:pastebin.com intext:username | password | SECRET_KEY	
+inurl:/wp-content/uploads/ ext:txt "username" | "user name" | "uname" | "user" | "userid" | "user id" AND "password" | "pass word" | "pwd" | "pw"
+inurl:password site:shodan.io	
