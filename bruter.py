@@ -148,10 +148,10 @@ def brutemain():
 						
 						
 			print "\n Generating combinations for domain: "+str(counter)+" / "+str(ips_lungime)
-			counter = counter+1
+
 		
 		
-		print "\n[!] Rearranging combinations for better use, patience please.\n"
+
 		for k in range(0,countery):
 			for ip in ips:
 				try:
