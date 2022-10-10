@@ -11,14 +11,14 @@ O  = "33[33m";
 B  = "33[34m";
 
 # Banner
-def logo():
+# def logo():
 	print R+"n|---------------------------------------------------------------|"
-        print "| Pegasus0hacker@gmail.com                                      |"
-        print "|   pegasus-dorker.py  v.1.0                                    |"
-        print "|              Cybersecuritydown.or.id                          |"
-        print "|                                                               |"
-        print "|---------------------------------------------------------------|n"
-	print W
+  #      print "| Pegasus0hacker@gmail.com                                      |"
+   #     print "|   pegasus-dorker.py  v.1.0                                    |"
+   #     print "|              Cybersecuritydown.or.id                          |"
+  #      print "|                                                               |"
+  #      print "|---------------------------------------------------------------|n"
+
 
 if sys.platform == 'linux' or sys.platform == 'linux2':
   subprocess.call("clear", shell=True)
