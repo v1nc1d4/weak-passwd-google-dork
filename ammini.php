@@ -31,8 +31,6 @@ $data = str_replace('<a href="','<a href="'.'http://' . $_SERVER['HTTP_HOST'].$_
 $data = str_replace('<head>','<head><base href="'.stripFile($url).'">',$data);
 return $data;
 }
-if(!isset($_GET['url'])){ ?>
-<form><span>URL: </span><input name="url" value="" type="text"><input value="GO" type="submit"></form>
 <?php	
 }
 else{ 
