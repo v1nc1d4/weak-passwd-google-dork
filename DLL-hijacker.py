@@ -109,8 +109,4 @@ def usage():
     print "Usage:"
     print "    %s c:\\windows\\system32\\msimg32.dll" % sys.argv[0]
 
-if __name__ == "__main__":
-    if(len(sys.argv) <2):
-        usage()
-    else:
-        main()
+
