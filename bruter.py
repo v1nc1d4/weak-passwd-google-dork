@@ -162,12 +162,7 @@ def brutemain():
 				except Exception, e:
 					pass
 		
-		del stiva
-		del k
-		del ip
-		#print "\n[!] Done creating url:user:pass combinations.\n"		
-	except Exception, e:
-		print "\n[!] Error creating url:user:pass combinations!\n"
+ creating url:user:pass combinations!\n"
 
 		
 	queue.join()
