@@ -170,24 +170,7 @@ public class Calculator extends JFrame implements ActionListener {
                 d = '+';
             }
         }
-        if (e.getSource() == bm) {
-            if (re == 0) {
-                re = Float.parseFloat(str);
-                str = "";
-                d = '-';
-                f = '0';
-            } else {
-                if (f == '0') {
-                    cal();
-                    str = "";
-                    f = '1';
-                } else {
-                    re = re - (Float.parseFloat(str));
-                    str = "";
-                    f = '1';
-                }
-                d = '-';
-            }
+ 
 
         }
         if (e.getSource() == bd) {
