@@ -7,10 +7,6 @@ def encrypt():
 		y=y+key                                 #adding key to ascii
 		z=chr(y)                                #converting ascii to character
 		cipher.append(z)
-	string=''
-	for i in cipher:                                #changing from character array to string
-		string=string+i
-	print(string)
 def decrypt():
 	cipher=input("Enter cipher text to decrypt \n")
 	key=int(input("Enter key shift \n"))
