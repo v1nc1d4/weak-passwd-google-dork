@@ -93,9 +93,6 @@ BOOL WINAPI DllMain(HMODULE hModule, DWORD dwReason, PVOID pvReserved)\
     return TRUE;\
 }\
 "
-    filename = sys.argv[1][sys.argv[1].rindex('\\')+1:sys.argv[1].rindex('.')]
-    fp = open(filename + ".cpp", "w+")
-    define_dll_exp_func = ""
     for exptable in exportTable:
         define_dll_exp_func += r"#pragma comment(linker, \"/EXPORT:" + str(exptable.name) +\
                             "=_DLLHijacker_" + str(exptable.name) + ",@"+ str(exptable.ordinal) +"\")\n"
