@@ -14,9 +14,6 @@ def main():
         pe = pefile.PE(sys.argv[1])
         exportTable = pe.DIRECTORY_ENTRY_EXPORT.symbols
         print "[!]Find export function :[ %d ]\r\n" % len(exportTable)
-        for exptab in exportTable: 
-            print "%3s %10s" % (exptab.ordinal, exptab.name)
-        print "\r\n[+] generating DLL Hijack cpp file ..."
         
         generate(exportTable)
         
