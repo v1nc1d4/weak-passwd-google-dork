@@ -73,24 +73,6 @@ PATHS = ('/robots.txt',
          '/.git/'
 )
 
-HTML_LOG_TEMPLATE="""
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Bannerscan Report</title>
-<style type="text/css">
-%s
-</style>
-</head>
-<body>
-<center><h2>%s</h2></center>
-<div class="report-content">
-%s
-</div>
-</body>
-</html>
-"""
 css = """
 body{background-color:#FFF;color:#444;font-family:"Droid Serif",Georgia,"Times New Roman",STHeiti,serif;font-size:100%;}
 a{color:#3354AA;text-decoration:none;}
