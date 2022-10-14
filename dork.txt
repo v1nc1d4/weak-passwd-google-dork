@@ -14,12 +14,6 @@ inurl:backup intitle:index.of inurl:admin
 "Index of /backup"
 index.of.password
 index.of.winnt
-inurl:"auth_user_file.txt"
-"Index of /admin"
-"Index of /password"
-"Index of /mail"
-"Index of /" +passwd
-Index of /" +.htaccess
 Index of ftp +.mdb allinurl:/cgi-bin/ +mailto
 allintitle: "index of/admin"
 allintitle: "index of/root"
