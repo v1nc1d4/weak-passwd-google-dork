@@ -12,12 +12,6 @@ def encrypt(text,key):
     hex_enc_txt = ''.join(li)
     return encrypted_txt,hex_enc_txt
 
-def decrypt(ciphered_txt,key):
-    decrypted_txt = ''
-    for i in range(0,len(ciphered_txt)):
-        xored = ord(ciphered_txt[i]) ^ ord(key)
-        decrypted_txt += chr(xored)
-    return decrypted_txt
 
 alpha = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 for i in alpha:
