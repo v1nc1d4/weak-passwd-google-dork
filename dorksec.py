@@ -119,9 +119,6 @@ def search(inurl, maxc):
     try:
       host = url.split("/",3)
       domain = host[2]
-      if domain not in tmplist and "=" in url:
-	finallist.append(url)
-	tmplist.append(domain)
 
     except:
       pass
