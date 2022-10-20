@@ -24,7 +24,6 @@ def main():
 def generate(exportTable):
     segments = r"//Generate by DLLHijacker.py\
 \
-#include <Windows.h>\
 \
 DEFINE_DLL_EXPORT_FUNC\
 #define EXTERNC extern \"C\"\
