@@ -28,10 +28,7 @@ if(userChoice=="yes"):
     print(funnyQuestions["question2"])
     print(answer["question2"])
     useranswer2=(input("your answer="))
-    if(useranswer2=="omg"):
-        print("correct")
-        score=score+1
-    else:
+  
         print("your anser is wrong")
         print("congratulations your score is :",score)
         exit()
