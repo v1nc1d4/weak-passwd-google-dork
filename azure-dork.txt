@@ -11,4 +11,3 @@
 * site:*.blob.core.windows.net ext:xls | ext:xlsx (login | password | username)
 * intext:connectionstring blob filetype:config
 * intext:accountkey windows.net filetype:xml
-* intext:storageaccountkey windows.net filetype:txt
