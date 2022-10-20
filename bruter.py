@@ -66,10 +66,7 @@ class brute(threading.Thread):
 			json_login.flush()
 
 				
-			return True
-		except Exception, e:
-			return False
-				
+		
 def generateusers(ip):
 	ext = tldextract.extract("https://"+ip)
 
